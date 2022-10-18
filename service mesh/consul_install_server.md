@@ -56,7 +56,7 @@ scp consul-agent-ca.pem ubuntu@<IP-CLIENTES>:/etc/consul.d/
 
 #
 #```sh
-#scp consul-agent-ca.pem lab01-client-consul-0.pem lab01-client-coonsul-0-key.pem #ubuntu@<IP-CLIENTS>:/etc/consul.d/
+#scp consul-agent-ca.pem lab01-client-consul-0.pem lab01-client-consul-0-key.pem #ubuntu@<IP-CLIENTS>:/etc/consul.d/
 #```
 
 ### Cofigurando os Agentes
