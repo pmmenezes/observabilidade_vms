@@ -148,19 +148,8 @@ ExecStart=/usr/bin/consul connect envoy -sidecar-for frontend \
 Restart=on-failure
 [Install]
 WantedBy=multi-user.target
-And /etc/systemd/system/backend-sidecar-proxy.service should match Example 4-10.
-Example 4-10. /etc/systemd/system/backend-sidecar-proxy.service
-[Unit]
-Description="Backend sidecar proxy service"
-Requires=network-online.target
-After=network-online.target
-[Service]
-ExecStart=/usr/bin/consul connect envoy -sidecar-for backend \
--admin-bind 127.0.0.1:19001
-Restart=on-failure
-[Install]
-WantedBy=multi-user.target
 ```
+
 
 ```sh
 sudo systemctl start frontend-sidecar-proxy
