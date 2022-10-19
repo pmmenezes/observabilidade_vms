@@ -1,7 +1,7 @@
 ```sh
 cd ~ 
-curl -L https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/backend-linux-amd64 
-curl -L https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/frontend-linux-amd64 
+curl -LO https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/backend-linux-amd64 
+curl -LO https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/frontend-linux-amd64 
 ```
 
 ```sh
