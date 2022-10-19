@@ -1,11 +1,13 @@
 ```sh
-curl -L https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/backend-linux-amd64 -output-dir /tmp
-curl -L https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/frontend-linux-amd64 -output-dir /tmp
+cd ~ 
+curl -L https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/backend-linux-amd64 
+curl -L https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/frontend-linux-amd64 
 ```
 
 ```sh
-sudo mv /tmp/backend-linux-amd64 /usr/local/bin/backend
-sudo mv /tmp/frontend-linux-amd64  /usr/local/bin/frontend
+cd ~ 
+sudo mv backend-linux-amd64 /usr/local/bin/backend
+sudo mv frontend-linux-amd64  /usr/local/bin/frontend
 sudo chmod +x /usr/local/bin/{frontend,backend}
 ```
 
