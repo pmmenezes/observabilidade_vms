@@ -17,7 +17,7 @@ Adicione a configuração abaixo no /etc/nginx/nginx.conf no bloco http{}
 
 ```nginx
 server {
-        listen localhost:8080;
+        listen localhost:81;
         location /metrics {
                 stub_status on;
                 allow 127.0.0.1;
