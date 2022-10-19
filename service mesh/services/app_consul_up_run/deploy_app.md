@@ -1,6 +1,6 @@
 ```sh
-curl -L https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/backend-linux-amd64 --output-dir /tmp
-curl -L https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/frontend-linux-amd64 --output-dir /tmp
+curl -L https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/backend-linux-amd64 -output-dir /tmp
+curl -L https://github.com/consul-up/birdwatcher/releases/download/v1.0.0/frontend-linux-amd64 -output-dir /tmp
 ```
 
 ```sh
