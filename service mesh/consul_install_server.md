@@ -42,9 +42,6 @@ consul tls cert create -server -dc lab01 # -domain local
 sudo cp  consul-agent-ca* lab01-server-consul-0* /etc/consul.d/
 ```
 
-#```sh
-#consul tls cert create -client -dc lab01 # -domain local
-#```
 #### Distribua as chaves e certificados para os servidores consul e para os clientes
  
 ```sh
@@ -53,11 +50,6 @@ scp consul-agent-ca.pem lab01-server-coonsul-0.pem lab01-server-consul-0-key.pem
 ```sh
 scp consul-agent-ca.pem ubuntu@<IP-CLIENTES>:/etc/consul.d/
 ```
-
-#
-#```sh
-#scp consul-agent-ca.pem lab01-client-consul-0.pem lab01-client-consul-0-key.pem #ubuntu@<IP-CLIENTS>:/etc/consul.d/
-#```
 
 ### Cofigurando os Agentes
  
@@ -167,15 +159,7 @@ sudo systemctl enable consul
 sudo systemctl status consul
 ```
 
-#
-
-##```sh
-##export CONSUL_CACERT=/etc/consul.d/consul-agent-ca.pem
-#export CONSUL_CLIENT_CERT=/etc/consul.d/<dc-name>-<server/#client>-consul-<cert-number>.pem
-#export CONSUL_CLIENT_KEY=/etc/consul.d/<dc-name>-<server/#client>-consul-<cert-number>-key.pem
-#```
 `sudo rm /opt/consul/serf/local.keyring`
-
 
 #### Referências
 [Day 1: Deploy Your First Datacenter](https://learn.hashicorp.com/collections/consul/production-deploy)
