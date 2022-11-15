@@ -1,4 +1,4 @@
-#  Instalção do Prometheus, Grafana, Loki e Service Mesh com Consul
+#  Instalação do Prometheus, Grafana, Loki e Service Mesh com Consul
 ## Requisitos
 Neste Lab foi utilizado duas Vms Ubuntu Server 20.04 LTS:
   - server-monitoring: Server de observabilidade (Grafana, Prometheus, Loki, Promtail e Consul Server)
